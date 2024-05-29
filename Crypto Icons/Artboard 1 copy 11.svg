@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ELEMENTS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="37.5" cy="37.5" r="37.5" transform="translate(-5.58 6.57) rotate(-9.33)"/>
+  <path class="cls-2" d="M37.05,17.22h-11.66v18.06h-4.79v4.42h4.79v18.05h13.58s19.1,1.6,19.1-19.93-18.26-20.61-21.02-20.61ZM38.66,50.26h-5.62v-10.56h8.43v-4.42h-8.43v-10.56h5.36c2,0,12.09.81,12.1,13.26.02,12.45-10.4,12.29-11.84,12.29Z"/>
+</svg>

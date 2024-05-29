@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ELEMENTS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: rgba(255, 255, 255, .2);
+      }
+
+      .cls-3 {
+        fill: rgba(255, 255, 255, .6);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="37.5" cy="37.5" r="37.5" transform="translate(-11.69 17.67) rotate(-23.04)"/>
+  <g>
+    <path class="cls-3" d="M38.67,9.38v20.79l17.57,7.85-17.57-28.64Z"/>
+    <path class="cls-4" d="M38.67,9.38l-17.57,28.64,17.57-7.85V9.38Z"/>
+    <path class="cls-3" d="M38.67,51.49v14.13l17.58-24.33-17.58,10.2Z"/>
+    <path class="cls-4" d="M38.67,65.61v-14.13l-17.57-10.2,17.57,24.33Z"/>
+    <path class="cls-2" d="M38.67,48.22l17.57-10.2-17.57-7.85v18.05Z"/>
+    <path class="cls-3" d="M21.09,38.02l17.57,10.2v-18.05l-17.57,7.85Z"/>
+  </g>
+</svg>

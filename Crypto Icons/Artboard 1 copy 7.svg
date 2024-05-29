@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ELEMENTS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M37.5,0C58.21,0,75,16.79,75,37.5s-16.79,37.5-37.5,37.5S0,58.21,0,37.5,16.79,0,37.5,0"/>
+  <polygon class="cls-2" points="27.8 33.47 33.48 27.81 34.67 26.62 37.51 23.78 47.17 33.47 52.8 27.81 37.51 12.5 22.17 27.81 27.8 33.47"/>
+  <rect class="cls-2" x="33.52" y="33.5" width="7.99" height="7.99" transform="translate(-15.52 37.51) rotate(-45)"/>
+  <polygon class="cls-2" points="47.17 41.54 37.51 51.21 34.11 47.81 33.49 47.19 27.8 41.54 22.17 47.17 37.51 62.48 52.8 47.17 47.17 41.54"/>
+  <rect class="cls-2" x="14.15" y="33.51" width="7.99" height="7.99" transform="translate(-21.21 23.82) rotate(-45)"/>
+  <rect class="cls-2" x="52.86" y="33.51" width="7.99" height="7.99" transform="translate(-9.87 51.19) rotate(-45)"/>
+</svg>

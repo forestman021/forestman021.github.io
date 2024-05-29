@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZERO21 - Interconnecting the two worlds</title>
+    <link rel="icon" type="image/x-icon" href="./Images/Z21_favicon.svg" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="master.css" />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+        background-color: var(--color-gray-200);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      :root {
+        /* fonts */
+        --font-poppins: Poppins;
+
+        /* Colors */
+        --black: #000;
+        --white: #fff;
+        --orange: #f47721;
+        --color-chocolate-100: #db5e08;
+        --color-gray-100: #7d7d7d;
+        --color-gray-200: #1e1e1e;
+        --color-gray-300: #1b1a1d;
+        --color-gray-400: #1a1a1a;
+      }
+
+      .navbar {
+        background-color: var(--color-gray-200);
+      }
+
+      .privacy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+      }
+
+      .privacy-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+
+      .privacy-headline {
+        line-height: 110%;
+        font-weight: 600;
+        display: inline-block;
+        max-width: 100%;
+        font-family: var(--font-poppins);
+        color: var(--white);
+        font-size: 40pt;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .privacy-paragraph {
+        line-height: 120%;
+        font-weight: 200;
+        font-family: var(--font-poppins);
+        color: var(--white);
+        font-size: 12pt;
+        max-width: 70%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .privacy-link {
+        line-height: 120%;
+        font-weight: 200;
+        font-family: var(--font-poppins);
+        color: var(--orange);
+        font-size: 12pt;
+        text-decoration: none;
+      }
+
+      .privacy-link:hover {
+        color: var(--white);
+        transition-duration: 0.5s;
+      }
+
+      .privacy-list-second,
+      .privacy-list-main {
+        line-height: 120%;
+        font-weight: 200;
+        font-family: var(--font-poppins);
+        color: var(--white);
+        font-size: 12pt;
+        max-width: 70%;
+        margin-top: 2rem;
+      }
+
+      .privacy-list-second {
+        counter-reset: item;
+      }
+
+      .privacy-list-item-two:before {
+        content: counters(item, '.') ' ';
+        counter-increment: item;
+      }
+
+      .privacy-list {
+        line-height: 120%;
+        font-weight: 200;
+        font-family: var(--font-poppins);
+        color: var(--white);
+        font-size: 12pt;
+        max-width: 70%;
+        list-style-type: circle;
+      }
+
+      .privacy-list-item-two,
+      .privacy-list-item {
+        margin-bottom: 1rem;
+      }
+
+      .privacy-subheader {
+        line-height: 120%;
+        font-weight: 400;
+        font-family: var(--font-poppins);
+        color: var(--white);
+        font-size: 16pt;
+        max-width: 70%;
+        margin-top: 2rem;
+      }
+
+      .privacy-table {
+        max-width: 70%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+
+    <div class="container" id="home">
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./Images/Z21_logo.svg"
+              alt="Logo"
+              width="150"
+              height="40"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#our-product"
+                  >Our Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#faq">FAQs</a>
+              </li>
+            </ul>
+            <a href="index.html#contact-us" class="nav-btn-link"
+              ><button class="btn nav-btn" type="submit">Contact Us</button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Header End -->
+
+    <div class="container privacy">
+      <div class="row">
+        <div class="col-sm-12 privacy-col">
+          <h1 class="privacy-headline">Privacy Policy</h1>
+          <p class="privacy-paragraph">
+            This Version of ZERO21 Privacy Policy is valid from 28th of May
+            2024. <br /><br />
+            ZERO21 LTD is a Limited Company registered in Cyprus with a
+            registered address MALEMA COURT, Floor 4, Flat/Office 41,
+            Evangelistrias 16, 3031 Agias Zonis, Limassol (Hereinafter: ZERO21
+            or Company).<br /><br />
+            Company is committed to protect and respect your privacy in
+            compliance with EU General Data Protection Regulation (GDPR)
+            2016/679 and also with applicable United States Privacy Act as
+            amended from time to time. ”You” means you as a customer, a
+            potential customer, our customer’s employee or other relevant person
+            such as our customer’s authorized representative, director or
+            beneficial owner as well as our customer’s customer when using our
+            services. This Privacy Policy explains how the Company collects and
+            uses your personal data. It also describes your rights towards
+            Company and how to exercise them.<br /><br />
+            Company process individuals’ personal data for several reasons.
+            Company processes your personal data in the capacity of the data
+            controller.<br /><br />
+            Persons under the age of 16 cannot provide any personal data. If you
+            are a person below the age of 16, before any activities on this site
+            you must obtain the consent of your legal guardians (parents,
+            adoptive parents, guardians, careers).<br /><br />
+            The terms used in this Privacy Policy are understood as defined in
+            the EU General Data Protection Regulation (GDPR) 2016/679.<br /><br />
+            This Privacy Policy explains the following:
+          </p>
+
+          <ol class="privacy-list-main">
+            <li>
+              What personal data we collect and how your personal data is
+              collected
+            </li>
+            <li>
+              How we may use your personal data and the lawful basis for doing
+              so
+            </li>
+            <li>Who we may disclose your personal data to</li>
+            <li>How we protect your personal data</li>
+            <li>Your GDPR Rights</li>
+            <li>Your USA Privacy Rights</li>
+            <li>Cookies</li>
+            <li>How long we keep your personal data</li>
+            <li>Changes to this Privacy Policy</li>
+            <li>How to contact us</li>
+            <li>Do You Need Extra Help?</li>
+          </ol>
+
+          <!-- 1. What personal data we collect and how your personal data is
+            collected -->
+
+          <h5 class="privacy-subheader">
+            1. What personal data we collect and how your personal data is
+            collected
+          </h5>
+          <p class="privacy-paragraph">
+            In order to provide our services we need to process your personal
+            data as described below. In the course of our business, we collect
+            personal data in a variety of ways. We collect personal data
+            directly from data subjects, via data subject’s usage of this site,
+            of our service and through our customers. You may directly or
+            indirectly give us information about yourself in a variety of ways,
+            such as when you contact us, use our portal or any other service of
+            ours where you submit personal data. <br /><br />
+            Personal data we collect: <br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Personal and contact information: name, date of birth, national
+              identification number, government identification numbers such as:
+              driver’s license, state identification, passport, social security
+              or tax identification number, address, e-mail address, mobile and
+              landline telephone number, title, billing and shipping address. We
+              are under legal obligation to collect documentation of such
+              information, for example in the form of copies of your passport or
+              driver’s license
+            </li>
+            <li class="privacy-list-item">
+              Payment information: bank account number, invoice information,
+              credit and debit card data
+            </li>
+            <li class="privacy-list-item">
+              Historical information: your purchase and payment acceptance
+              history
+            </li>
+            <li class="privacy-list-item">
+              Financial information: your income, turnover, negative payment
+              remarks, type of agreement, transactional data
+            </li>
+            <li class="privacy-list-item">
+              Information on goods/services: details about the items you
+              purchase
+            </li>
+            <li class="privacy-list-item">
+              Information related to legal requirements: country of taxation or
+              foreign tax payer reference, customer due diligence and anti -
+              money laundering requirements
+            </li>
+            <li class="privacy-list-item">
+              Technical information, including the Internet protocol (IP)
+              address used to connect your computer to the Internet, your login
+              information, browser type and version, time zone setting, browser
+              plug-in types and versions, operating system and platform
+            </li>
+            <li class="privacy-list-item">
+              Information about your visit, including the full Uniform Resource
+              Locators (URL) clickstream to, through and from our site
+              (including date and time); products you viewed or searched for;
+              page response times, download errors, length of visits to certain
+              pages, page interaction information (such as scrolling, clicks,
+              and mouse-overs), and methods used to browse away from the page
+              and any phone number used to call our customer service number
+            </li>
+            <li class="privacy-list-item">
+              Geo-Location Information, some devices allow applications to
+              access real-time location-based information (for example GPS). Our
+              applications may collect such information from your device at any
+              time while you download or use our services. We may use this
+              information to optimize your experience
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            Special categories of data: <br /><br />
+            Company does not collect or process any special categories of
+            personal data. <br /><br />
+            Personal data we may collect from third parties: <br /><br />
+            We may collect your personal data from third party services either
+            publicly available or engaged by us to verify you against sanction
+            lists (EU, UN sanction lists or OFAC lists) and registers held by
+            tax authorities, company registration agencies and other commercial
+            or non-commercial information providers on beneficial owners and
+            politically exposed persons. We also collect information from
+            remitters, shops, banks, payment service providers and others. Our
+            legal basis for collecting, processing, and sharing such information
+            about you with third party services as explained in this paragraph
+            is fulfilling our legal obligations, such as preventing, detecting
+            and investigating money laundering, terrorist financing and fraud
+            prevention.
+          </p>
+
+          <!-- 2. How we may use your personal data and the lawful basis for doing
+            so -->
+
+          <h5 class="privacy-subheader">
+            2. How we may use your personal data and the lawful basis for doing
+            so
+          </h5>
+          <p class="privacy-paragraph">
+            We use your personal data for a variety of reasons and based on
+            different legal basis. <br /><br />
+            Collecting personal data based on consent: <br /><br />
+            We may use your personal data to send you marketing communication
+            which you requested. These may include information about our
+            products and services, events, activities and promotions of our
+            associated partners’ products or services. This communication is
+            subscription based and requires your consent. The collection of
+            personal data is based on consent, the data subject will give
+            his/her consent by using “Consent Forms” that will store
+            documentation related to the consent given by the individual.
+            Individual consent will always be stored and documented in our
+            system. If you have given consent to the processing of your personal
+            data, you can always withdraw the consent by sending the e-mail to
+            the e- mail address given below in the contact details (see “How to
+            contact us” below). Withdrawal of consent does not affect the
+            admissibility of processing before the withdrawal. In case of
+            withdrawal of consent, we will not process your data, unless we have
+            legal obligation for processing. We will respond to each request as
+            soon as possible, and in any case no later than within 30 days of
+            receiving the request. <br /><br />
+            Collecting personal data based on contractual necessity:
+            <br /><br />
+            We use your personal data for fulfilling our contractual obligations
+            towards you. It is impossible for us to perform our service to you
+            without collecting and processing your personal data (contractual
+            necessity as legal basis). Examples of contractual necessity as
+            legal basis for your personal data collection and processing are
+            opening an account with us, processing and/or initiating payment
+            transactions using our services, receiving settlements from us,
+            invoicing, etc. <br /><br />
+            Collecting personal data based on legal obligations: <br /><br />
+            In some cases we are under legal obligation to process your personal
+            data as part of our KYC requirements, preventing, detecting and
+            investigating money laundering, terrorist financing and fraud
+            prevention, sanction screening, reporting to tax authority, police
+            authorities, supervisory authorities, payment service requirements.
+            <br /><br />
+            We may also send you information about the products and services
+            that you have purchased from us, and replies to a “Contact me” or
+            other web forms you have completed on our website. We will follow up
+            on incoming requests (customer support, emails, chats or phone
+            calls). We will notify you of every disruption to our services
+            (system messages).
+            <br /><br />
+            We also have a legitimate interest to use profiling when monitoring
+            transactions in order to detect fraudulent transactions. Profiling
+            is any form of automated processing of personal data in the form of
+            analysis and assessment of specific aspects. Based on that analysis,
+            some cases of atypical behavior can be established, which are then
+            examined, one by one, in order to determine whether fraudulent
+            transactions exists or not.
+            <br /><br />
+            Please keep in mind that We will not be able to provide our services
+            to you in case you fail to provide the necessary personal data as
+            described in this Privacy Policy.
+            <br /><br />
+          </p>
+
+          <!-- 3. Who we may disclose your personal data to -->
+
+          <h5 class="privacy-subheader">
+            3. Who we may disclose your personal data to
+          </h5>
+          <p class="privacy-paragraph">
+            We do not share, sell, rent or trade your personal data with any
+            third parties without your consent, except from what is described
+            below:<br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Our affiliates, including companies within the Company group.
+            </li>
+            <li class="privacy-list-item">Merchants</li>
+          </ol>
+          <p class="privacy-paragraph">
+            We may share with the merchant at which you made your purchase the
+            personal data necessary for the merchant’s performance, support and
+            administration of your order, including disputes. The personal data
+            shared with the merchant will be subject to the merchant's privacy
+            policies and practices.<br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Third party service providers</li>
+          </ol>
+          <p class="privacy-paragraph">
+            We may pass your personal data on to our suppliers, acquirers,
+            payment service providers, banks, clearing and settlement mechanisms
+            and other business partners if necessary for providing our service
+            to you. Before sharing your personal data, we will always ensure
+            that we respect relevant financial industry secret obligation. For
+            example, if you have asked us to transfer funds, we need to disclose
+            certain information to fulfill such transfer.<br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Authorities</li>
+          </ol>
+          <p class="privacy-paragraph">
+            We disclose personal data to authorities to the extent we are under
+            statutory obligation to do so. Such authorities may include tax
+            authorities, police authorities, AML authorities, law enforcement
+            authorities and supervisory authorities in relevant countries.<br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Sub-contractors (processors and sub- processors)
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            We may use sub-contractors (data processor) to process personal data
+            on our behalf, we are responsible for making sure they commit
+            themselves to adhere to this Privacy Policy and applicable data
+            protection legislation (GDPR) by signing the Data Processing
+            Agreement. You can obtain further information about specific
+            companies indicated in this section that could be provided with your
+            personal data by reaching us using the contact details provided in
+            this Privacy Policy.<br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Third country transfer</li>
+          </ol>
+          <p class="privacy-paragraph">
+            We may transfer personal data to organizations outside the EU/EEA
+            area. If the sub-contractor (data processor) processes personal data
+            outside the EU/EEA area, these transfers are subject to special
+            rules under European and UK data protection law and such processing
+            is done in accordance with the EU Standard Contractual Clauses for
+            transfer to third countries. We may transfer personal data to
+            organizations outside the USA area. If the sub-contractor (data
+            processor) processes personal data outside the USA area, these
+            transfers are subject to special rules and such processing is done
+            in accordance with the Standard Contractual Clauses for transfer to
+            third countries.<br /><br />
+            If you would like further information, please contact us (see “How
+            to contact us” below).
+          </p>
+
+          <!-- 4. How we protect your personal data -->
+
+          <h5 class="privacy-subheader">
+            4. How we protect your personal data
+          </h5>
+          <p class="privacy-paragraph">
+            Company has taken a number of steps in order to provide an extremely
+            secure service. We use appropriate technical, organizational and
+            administrative security measures to protect any information we hold
+            from loss, misuse, unauthorized access, disclosure, alteration and
+            destruction. The information is encrypted using secure socket layer
+            technology (SSL) and is stored with AES-256 encryption. Although no
+            method of transmission over the Internet or electronic storage is
+            100% secure, we follow all PCI-DSS requirements and implement
+            additional generally accepted industry standards. Where we have
+            provided you (or where you have chosen) a password or access code
+            which enables you to access certain parts of our site, you are
+            responsible for keeping this password confidential. We ask you not
+            to share any passwords with anyone, you authorize the Company to act
+            upon instructions and information from any person that enters your
+            user ID or password. Please note that once you leave our website or
+            are redirected to a third-party website or application, you are no
+            longer governed by this Privacy Policy.
+          </p>
+
+          <!-- 5. Your GDPR Rights -->
+
+          <h5 class="privacy-subheader">5. Your GDPR Rights</h5>
+          <p class="privacy-paragraph">
+            You have the following rights in regard to your personal data:
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Right of Access</li>
+          </ol>
+          <p class="privacy-paragraph">
+            You have the right to request information about whether we process
+            your personal data, access to that data and all other data related
+            to the processing of your data, in accordance with the regulations.
+            In most of the cases this information is already presented to you in
+            your online services from us. Your right to access may, however, be
+            restricted by legislation and protection of other person’s privacy
+            rights.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Right to Rectification</li>
+          </ol>
+          <p class="privacy-paragraph">
+            You have the right to request from us to correct your personal data
+            if inaccurate, incomplete, or out of date.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Right to be Forgotten</li>
+          </ol>
+          <p class="privacy-paragraph">
+            You have the right to request that your personal data is deleted
+            when it is no longer necessary for us to retain such data. Please
+            note that due to the financial sector legislation we are in many
+            cases under statutory obligation to retain personal data on you not
+            only during the customer relationship but also for many more years
+            after. For more details, please see Section 8. How long we keep your
+            personal data.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Right to Restriction of Processing
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            If you contest the correctness of the data which we have registered
+            about you or lawfulness of processing, or if you have objected to
+            the processing of the data in accordance with your right to object,
+            you may request us to restrict the processing of this data to
+            storing purposes only. The processing will only be restricted to
+            storing until the correctness of the data can be established, or it
+            can be checked whether our legitimate interests overwrite your
+            interests. If you are not entitled to deletion of the data which we
+            have registered about you, you may instead request that we restrict
+            the processing of this data to storing purposes only. If the
+            processing of the data which we have registered about you is solely
+            necessary to assert a legal claim, you may also demand that other
+            processing of this data be restricted to storing purposes only. We
+            may process your data for other purposes if this is necessary to
+            assert a legal claim or if you have granted your consent to this. We
+            will inform you on any correction or deletion of personal data or
+            limitation of their processing unless this is impossible or requires
+            an excessive expenditure of time and resources.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Right to Object</li>
+          </ol>
+          <p class="privacy-paragraph">
+            You can always object to the processing of your personal data for
+            direct marketing band profiling in concern to such marketing
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Right to Data Portability</li>
+          </ol>
+          <p class="privacy-paragraph">
+            You have the right to receive the personal data that you provided to
+            us in a machine-readable format. This right applies to personal data
+            processed only by automated means and on the consent or fulfilling a
+            contract basis. Where secure and technically feasible the data can
+            also be transmitted to another data controller by us.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Right to Complain to Supervising Authority
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            If you are not satisfied with the way in which we process your
+            personal data you may in the first instance contact us at
+            privacy@Company.com. If you remain dissatisfied, then you have the
+            right to apply directly to your national supervisory authority for a
+            decision. To find your national supervisory body please go to
+            <a
+              href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm"
+              class="privacy-link"
+              >this adress.</a
+            >
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Automated individual decision-making and profiling
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            Please be informed that you have the right not to apply to you a
+            decision made solely on the basis of automated processing, including
+            profiling, if that decision produces legal consequences for you or
+            that decision significantly affects your position.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Right to Withdraw your Consent to e-marketing
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            In the case you want to withdraw your consent from e-marketing,
+            please make use of the link to manage your subscription included in
+            our communication. Please note that you may still receive system
+            messages and notifications about your account activities.
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">Personal data breach notification</li>
+          </ol>
+          <p class="privacy-paragraph">
+            Please be informed that we will notify you without undue delay of
+            any breach of personal data if that breach may cause a high risk to
+            your rights and freedoms. <br /><br />
+            Your request to exercise your rights as listed above will be
+            assessed given the circumstances in an individual case. Please bare
+            in mind that we may also retain and use your personal data as
+            necessary to comply with legal requirements, resolve disputes and or
+            enforce our agreements. <br /><br />
+            Any query about your Privacy Rights should be sent to
+            privacy@Company.com
+          </p>
+
+          <!-- 6. Your USA Privacy Rights -->
+
+          <h5 class="privacy-subheader">6. Your USA Privacy Rights</h5>
+          <p class="privacy-paragraph">
+            You have the right under the California Consumer Privacy Act of 2018
+            (CCPA) and certain other privacy and data protection laws, as
+            applicable, to exercise free of charge: <br /><br />
+            California: <br /><br />
+            If you are a consumer from California, this Privacy Policy for
+            California (CA Privacy Policy) is designed to help you understand
+            the categories of personal data we collect about you, where we
+            obtain this personal data, why we process it, with whom we share it,
+            and the rights you must know and control your personal data. If this
+            CA Privacy Policy and any provision in the rest of our Privacy
+            Policy conflict, this CA Privacy Policy controls the processing of
+            personal data of Consumers in California. This CA Privacy Policy
+            does not apply to employees of the Company, contractors, temporary
+            workers, or job applicants. <br /><br />
+            Information on Collection: <br /><br />
+            For the purposes of CCPA, the Company generally acts as a "business"
+            regarding your personal data. A business is similar to a data
+            controller, meaning that the Company determines how and why it
+            handles personal data collected from or about you. This Information
+            on Collection of Personal Data describes our practice of collecting
+            personal data when we act as a business, including a list of
+            categories of personal data we collect, the purposes for which we
+            collect personal data, and the sources from which we collect
+            personal data. CCPA requires from the Company to make certain
+            disclosures using the categories of personal data used in the CCPA
+            definition of personal data. <br /><br />
+          </p>
+          <img src="./Images/Z21_privacy_tabela.svg" class="privacy-table" />
+          <p class="privacy-paragraph">
+            When the Company collects precise geolocation information for the
+            purpose of providing the requested Service, it is considered that we
+            collect data that is sensitive according to the California law. Our
+            use of this data to perform the service you requested is in
+            accordance with permissible business purposes in the California
+            Civil Code § 1798.100 et seq. and implementing regulations. While we
+            may disclose personal data to third parties, we do not sell or
+            sharing such information about anyone under the age of 16.
+            <br /><br />
+            Privacy Rights for a California Consumer: <br />
+          </p>
+          <ol class="privacy-list-main">
+            <li class="privacy-list-item">
+              Right to Know: You have the right to request access to personal
+              data collected about you and information about the source of that
+              data, the purposes for which we collect it, and the third parties
+              and service providers with whom we share it.
+            </li>
+            <li class="privacy-list-item">
+              Right to Deletion: You have the right to request the deletion of
+              specific personal data we have collected about you.
+            </li>
+            <li class="privacy-list-item">
+              Right to Correction: You have the right to correct inaccurate
+              personal data about you. Note that correction requests are subject
+              to certain limitations, and in certain circumstances, we may
+              choose to delete rather than correct your personal data.
+            </li>
+            <li class="privacy-list-item">
+              Right to Opt-Out of Sale of Personal Data to Third Parties: Our
+              disclosure of your personal data to third-party advertising and
+              analytics service providers may constitute a sale under certain
+              state laws, and in California, it may also constitute "sharing" (a
+              term used to refer to sharing information for advertising
+              purposes). To the extent our use constitutes a sale or sharing of
+              your personal data, you have the right to opt-out by (a) enabling
+              the "Do Not Track" signal or global privacy control in your
+              browser recognized by our U.S. websites, (b) disabling cookies in
+              our cookie settings for U.S. websites, or (c) submitting an
+              opt-out request at privacy@Company.com.
+            </li>
+            <li class="privacy-list-item">
+              Right to Non-Discrimination: You have the right to not be
+              discriminated against by us because you exercised any of your
+              rights. This means we cannot, among other things:
+              <ol class="privacy-list-second">
+                <li class="privacy-list-item-two">
+                  Deny goods or services to you
+                </li>
+                <li class="privacy-list-item-two">
+                  Charge different prices or rates for goods or services,
+                  including through the use of discounts or other benefits or
+                  imposing penalties
+                </li>
+                <li class="privacy-list-item-two">
+                  Provide a different level or quality of goods or services to
+                  you
+                </li>
+                <li class="privacy-list-item-two">
+                  Suggest that you will receive a different price or rate for
+                  goods or services or a different level or quality of goods or
+                  services
+                </li>
+              </ol>
+            </li>
+          </ol>
+          <p class="privacy-paragraph">
+            Please note that we may charge a different price or rate or provide
+            a different level or quality of services to you, if that difference
+            is reasonably related to the value provided to our business by your
+            personal information. <br /><br />
+            To submit a request to exercise your privacy rights in California
+            you may contact us in a way prescribed in section <br /><br />
+            When submitting a request, include your name, email address, and
+            place of residence. You can authorize another person (your agent) to
+            submit a request on your behalf. Please note that we may (and in
+            some cases are required to) verify your identity before acting on
+            your request. Upon receiving and processing your request, we will
+            contact you using the email address provided in your request with
+            instructions on how to confirm your identity, after which we will
+            verify the match of information in our records. Also, we may not
+            fulfill your entire request or some part of it—e.g., certain
+            information we collect may be exempt, such as public information
+            available through government agencies or information covered by
+            other privacy laws. In such situations, when we respond to you, we
+            will explain why we cannot fulfill your request.<br /><br />
+            <em>Colorado, Connecticut, Utah, and Virginia:</em><br /><br />
+            Privacy laws in these states provide consumers with certain rights
+            regarding their personal data. The Company will respect these rights
+            for each U.S. resident. They include: <br /><br />
+          </p>
+          <ol class="privacy-list-main my-0">
+            <li class="privacy-list-item">
+              Right to Access Information: You have the right to access your
+              personal data and obtain a copy of it.
+            </li>
+            <li class="privacy-list-item">
+              Right to Request Deletion: You have the right to request the
+              deletion of personal data provided or obtained about you.
+            </li>
+            <li class="privacy-list-item">
+              Right to Correction: You have the right to correct inaccuracies in
+              your personal data.
+            </li>
+            <li class="privacy-list-item">
+              Right to Opt-Out: Our disclosure of your personal data to
+              independent advertising and analytics vendors may constitute a
+              sale under certain state laws. Additionally, we use cookies for
+              targeted advertising. You have the right to opt-out of these
+              activities by (a) enabling the Do Not Track signal or global
+              privacy control on your browser recognized by our U.S. websites,
+              (b) opting out of cookies in our cookie settings for U.S.
+              websites, or (c) submitting an opt-out request at
+              privacy@Company.com.
+            </li>
+            <li class="privacy-list-item">
+              In addition, residents of Colorado, Connecticut, and Virginia may
+              file a complaint regarding a decision on their consumer privacy
+              requests by contacting us via email at privacy@Company.com.
+            </li>
+          </ol>
+
+          <!-- 7. Cookies -->
+
+          <h5 class="privacy-subheader">7. Cookies</h5>
+          <p class="privacy-paragraph">
+            What the cookies are? <br /><br />
+            As is common practice on almost all professional websites, this
+            website uses cookies. Cookies are small files that are stored on
+            your computer in order to provide certain functionality and improve
+            your experience on the site. This page describes what information
+            they collect and how we use it. For general information about
+            cookies, see the Wikipedia article on
+            <a
+              href="https://en.wikipedia.org/wiki/HTTP_cookie"
+              class="privacy-link"
+              >Wikipedia.</a
+            >
+            <br /><br />
+            <br /><br />
+            We collect, process and analyze data regarding the use of our
+            webpages. This includes standard information from your web browser,
+            such as browser type and browser language, your Internet Protocol
+            (“IP”) address, the actions you take on our websites, such as the
+            webpages viewed, and links clicked. We use cookies and similar
+            technologies to deliver our services to you, provide a secure online
+            environment, to manage marketing and provide a better online
+            experience and to make our website content more relevant to you. If
+            used alone, cookies do not personally identify you. You can set or
+            amend your web browser controls to accept or reject cookies. If you
+            choose to reject cookies, you may still use our sites and some
+            services, however your access to some functions and or website areas
+            might be restricted. <br /><br />
+          </p>
+
+          <!-- 8. How long we keep your personal data -->
+
+          <h5 class="privacy-subheader">
+            8. How long we keep your personal data
+          </h5>
+          <p class="privacy-paragraph">
+            Your data will be kept as long as it is necessary for the purposes
+            for which the data was collected and processed or as long as it is
+            required by law. Please note that we are under legal obligation to
+            retain your data for the following statutory retention period:
+            <br /><br />
+          </p>
+          <ol class="privacy-list">
+            <li class="privacy-list-item">
+              Preventing, detecting and investigating money laundering,
+              terrorist financing and fraud - minimum of 8 (eight) years from
+              the date of termination of transactions or contractual
+              relationship
+            </li>
+            <li class="privacy-list-item">
+              Bookkeeping regulation - up to ten years;
+            </li>
+            <li class="privacy-list-item">
+              Payment services requirement - five years
+            </li>
+            <li class="privacy-list-item">
+              This statutory retention period list is not complete and is given
+              as an example only.
+            </li>
+          </ol>
+
+          <!-- 9. Changes to this Privacy Policy -->
+
+          <h5 class="privacy-subheader">9. Changes to this Privacy Policy</h5>
+          <p class="privacy-paragraph">
+            We may change the Privacy Policy from time to time, we will not
+            diminish your rights under this Privacy Policy. We kindly ask you to
+            review our Privacy Policy from time to time, however if the changes
+            we make are significant, we will provide you with prominent notice.
+            <br /><br />
+          </p>
+
+          <!-- 10. How to contact us -->
+
+          <h5 class="privacy-subheader">10. How to contact us</h5>
+          <p class="privacy-paragraph">
+            Please contact us and/or our Data Protection Officer by post, email
+            or telephone if you have any questions about this Privacy Policy or
+            the information we hold about you.
+            <br /><br />
+            Our contact details are shown below:
+            <br /><br />
+            MALEMA COURT, Floor 4, Flat/Office 41, Evangelistrias 16, 3031 Agias
+            Zonis, Limassol
+            <br />
+            [contact email address]
+            <br />
+            [contact telephone number]
+            <br />
+          </p>
+
+          <!-- 11. Do You Need Extra Help? -->
+
+          <h5 class="privacy-subheader">11. Do You Need Extra Help?</h5>
+          <p class="privacy-paragraph">
+            If you would like this notice in another format (for example: audio,
+            large print, braille) please contact us (see “How to contact us”
+            above).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
